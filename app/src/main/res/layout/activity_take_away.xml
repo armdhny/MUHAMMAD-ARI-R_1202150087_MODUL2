@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ramdhany.ari.alamsariresto.TakeAway">
+
+    <TextView
+        android:id="@+id/tvidPemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tvidPemesan"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvidPemesan"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/edName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/edPhone"
+        android:inputType="phone"
+        android:layout_below="@id/edNama"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UnusedAttribute" />
+
+    <EditText
+        android:id="@+id/edAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edPhone"
+        android:hint="@string/edAlamat"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UnusedAttribute" />
+    <EditText
+        android:hint="@string/edCatatan"
+        android:id="@+id/edCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edAlamat"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginRight="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="UnusedAttribute" />
+
+    <Button
+        android:text="@string/txDate"
+        android:id="@+id/btnDate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edCatatan"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="13dp"
+        android:onClick="PickDate"/>
+
+    <Button
+        android:text="@string/txTime"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnDate"
+        android:layout_alignBottom="@+id/btnDate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:id="@+id/btnTime"
+        android:onClick="PickTime"/>
+
+    <Button
+        android:text="@string/txtOrder"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:onClick="Order"/>
+
+
+</RelativeLayout>

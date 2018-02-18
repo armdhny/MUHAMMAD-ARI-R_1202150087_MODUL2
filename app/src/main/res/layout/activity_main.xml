@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ramdhany.ari.alamsariresto.MainActivity"
+    android:id="@+id/splash_screen">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/splash"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="@string/namaresto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvResto"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        tools:ignore="UnusedAttribute" />
+
+    <TextView
+        android:textColor="#ffffff"
+        android:id="@+id/PilihMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvResto"
+        android:layout_marginTop="62dp"
+        android:text="@string/tvPilihMenu"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/pilih"
+        android:layout_below="@+id/PilihMenu"
+        android:orientation="vertical">
+
+
+        <RadioButton
+            android:textColor="#ffffff"
+            android:id="@+id/dinein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radDineIn"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:buttonTint="@color/colortext"
+            android:onClick="onClickPesanan"/>
+
+        <RadioButton
+            android:textColor="#ffffff"
+            android:id="@+id/takeaway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radTakeAway"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:buttonTint="@color/colortext"
+            android:onClick="onClickPesanan"/>
+    </RadioGroup>
+
+    <Button
+        android:textColor="#ffffff"
+        android:id="@+id/btnPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pilih"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnPesan"
+        android:onClick="Pesan"/>
+
+</RelativeLayout>

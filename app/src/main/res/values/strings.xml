@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Alam Sari Resto</string>
+    <string name="namaresto">Alam Sari Resto</string>
+    <string name="toast">MUHAMMAD ARI_1202150087</string>
+    <string name="tvPilihMenu">Pilih Menu :</string>
+    <string name="radDineIn">Dine In</string>
+    <string name="radTakeAway">Take Away</string>
+    <string name="btnPesan">Pesan Sekarang</string>
+    <string name="tvidPemesan">Identitas Pemesan</string>
+    <string name="edName">Nama</string>
+    <string name="edPhone">Phone</string>
+    <string name="edAlamat">Alamat</string>
+    <string name="edCatatan">Catatan</string>
+    <string name="txDate">Pick Date</string>
+    <string name="txTime">Pick Time</string>
+    <string name="txtOrder">Order</string>
+    <string name="detail_customer">Detail Customer</string>
+    <string name="hintName">Name</string>
+    <string name="no_meja">No. Meja :</string>
+    <string name="choose_order">Choose Order</string>
+
+    <string-array name="array_meja">
+        <item>Meja 1</item>
+        <item>Meja 2</item>
+        <item>Meja 3</item>
+        <item>Meja 4</item>
+    </string-array>
+
+</resources>
